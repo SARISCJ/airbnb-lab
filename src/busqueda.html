@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" sizes="192x192" href="https://a1.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png" />
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+	<link rel="stylesheet" href="../styles/tcal.css">
+	<link rel="stylesheet" type="text/css" href="../styles/search.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header col-md-1">
+        <a class="navbar-brand" href="#">
+           <img src="../img/logo.png" alt="logo" class="img-tamano">
+        </a>
+      </div>
+      <div class="col-md-5">
+      </div>
+    </div>
+  </nav>
+	<!--search page-->
+	<div class="container-fluid">
+		<div class="col-md-7">
+			<div class="row">
+			<h1>REGISTRO DE  ALOJAMIENTO</h1>
+				<form action="">
+					<div id="idLugar"></div>
+					<div class="form-group">
+					    <label for="busqueda">Codigo</label>
+					    <input type="text" class="form-control" id="busqueda" placeholder="Ingrese lugar">
+					</div>
+					 <button id="btn-reg-lugar" type="submit" class="btn btn-danger">Busqueda de alojamiento</button>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div id="map"></div>
+		</div>
+	</div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkZsI4oLzrUCLnz5Fr1DxkzCMS4eLQ8Kc"
+  type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="gmaps.js"></script>
+	<script type="text/javascript" src="mapa.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script type="text/javascript" src="search.js"></script>
+	<script type="text/javascript" src="tcal.js"></script>
+	<script type="text/javascript" src="app/busqueda-alojamiento.js"></script>
+	
+</body>
+</html>

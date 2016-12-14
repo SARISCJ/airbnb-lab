@@ -1,0 +1,77 @@
+//colors
+$color-silver-chalice: #aaaaaa;
+$color-gallery: #edefed;
+
+.tipo-hab {
+	border: 1px solid $color-silver-chalice;
+	padding: 2px;
+	background-color: $color-gallery;
+	width: auto;
+}
+.texto {
+	font-size: 14px;
+}
+.tamano {
+	width: 159px;
+	padding: 5px;
+}
+.flash-color {
+	color: yellow;
+}
+
+//switch
+$color_celeste_approx: #ccc;
+$color_dodger_blue_approx: #2196f3;
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	input {
+		display: none;
+	}
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $color_celeste_approx;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: .4s;
+	&:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: .4s;
+	}
+	&.round {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 34px;
+		&:before {
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+		}
+	}
+}
+input {
+	&:checked + .slider {
+		background-color: $color_dodger_blue_approx;
+		&:before {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: translateX(26px);
+		}
+	}
+	&:focus + .slider {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 1px $color_dodger_blue_approx;
+	}
+}

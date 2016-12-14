@@ -1,0 +1,18 @@
+{
+  "name": "proyect",
+  "dependencies": {
+    "path-dirname": {
+      "version": "1.0.2",
+      "from": "path-dirname@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/path-dirname/-/path-dirname-1.0.2.tgz"
+    },
+    "glob-stream" :{
+      "version": "5.3.5",
+      "dependencies" : {
+        "glob-parent" : {
+          "version" : "3.0.0"
+        }
+      }
+    }
+  }
+}

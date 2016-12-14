@@ -1,0 +1,237 @@
+@import "_variables";
+
+
+
+// COMIENZO DE NAVBAR
+.a-color{
+    color: #2F2F2F;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.img-tamano{
+    width: 3%;
+    left: 1.2%;
+    top: 1.5%;
+    position:fixed;
+}
+
+.img-position{
+    width: 3.5%;
+    height: 6.5%;
+    position: fixed;
+    left: 95%;
+    top: 1%;
+}
+
+.position-caja{
+    position: relative;
+    left: 11%;
+    bottom: -21px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+// FIN DE NAVBAR
+* {
+margin: 0;
+padding: 0;
+list-style-type:none;
+}
+
+// COMIENZO SLIDER
+
+@-webkit-keyframes TMNT {
+  0%  { left: 0px; }
+  100% { left: -1200px; }
+}
+
+a.prev,a.next {
+  height:91px;
+  position:absolute;
+  width:43px;
+  top:50%;
+  margin-top:-30px;
+  opacity:0.6;
+  text-indent:-99999px;
+  cursor:pointer;
+  -webkit-transition:opacity 200ms ease-out;
+}
+
+a.prev:hover,a.next:hover {
+  opacity:1;
+}
+
+.prev {
+  left:0;
+  background: $negro url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -200px 25px;
+}
+
+.next {
+  right:0;
+  background: $negro url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
+}
+
+.slider {
+  height:100vh;
+  position: relative;
+
+  .slide:target {
+    z-index: 100;
+  }
+}
+
+.slide {
+  position:absolute;
+  height:100%;
+  width:100%;
+}
+
+img {
+  max-width:100%;
+  width:100%;
+  left:0;
+}
+
+// FIN DE SLIDER
+
+// COMIENZO slider 2
+
+.text-expr-slide {
+  padding: 0;
+  margin: 0 0 2.4 0;
+  font-size: 19px !important;
+  line-height: 24px !important;
+  letter-spacing: undefined !important;
+  color: $color_gravel_approx !important;
+}
+.cont-slider {
+  margin: 4;
+}
+.slider-two {
+  width: 95%;
+  cursor: pointer;
+}
+.img-slider-two {
+  padding: 0;
+}
+.slider-container {
+  margin: 3 0 0;
+}
+.text-slider {
+  margin: 2 0 0;
+  text-align: left;
+  font-size: 1.1em;
+}
+h5 {
+  margin: 0 0 1.5 0;
+}
+.cont-footer {
+  margin: 3 2;
+}
+.footer-select {
+  margin: 0 0 1.2rem 0;
+  padding: 1 0.7 1 0;
+  background-color: $white;
+  border: 1px solid $alto;
+  color: $color_teal_approx;
+  font-size: 16px;
+}
+.opt-menu-len {
+  padding: 1rem;
+  color: $color_tradewind_approx;
+  &:hover {
+    background: $alto;
+    color: $color_teal_approx;
+  }
+}
+.btn-select-2 {
+  padding: 0 9.5 0 0;
+}
+a {
+  color: $gray;
+  text-decoration: none;
+}
+.footer-airbnb {
+  margin: 3 0;
+}
+.footer-img {
+  width: 5%;
+  padding: 0;
+}
+p.footer-option {
+  margin: 1rem 0;
+  font-weight: 200 !important;
+  color: $color_gravel_approx !important;
+}
+.footer-option a {
+  &:hover {
+    color: $color_tradewind_approx;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $color_tradewind_approx;
+    text-decoration: none;
+  }
+  &:active {
+    color: $color_tradewind_approx;
+    text-decoration: none;
+  }
+}
+
+.color-btn {
+  background-color: $color_carnation_approx;
+}
+
+.donde-lugar{
+    position: relative;
+    top: -7px;
+    left: 38%;
+}
+
+.input-donde{
+   position: relative;
+    top: 24px;
+    left: 17%;
+
+}
+
+.cuando-lugar{
+  position: relative;
+    top: 5px;
+    left: 56%;
+}
+
+.input-calen{
+      position: relative;
+    top: 30px;
+    left: 117%;
+}
+
+.input-calenda{
+  position: relative;
+    left: 55%;
+    top: 5px;
+}
+
+.huespedes-lugar{
+      position: relative;
+    left: 160%;
+    top: -9px;
+}
+
+.selec-form{
+   position: relative;
+    left: 122%;
+    top: 19px;
+}
+
+.buscar-btn{
+      position: relative;
+    left: 25%;
+    top: 11px;
+}

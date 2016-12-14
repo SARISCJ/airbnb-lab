@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" sizes="192x192" href="//a1.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png" />
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+	<link rel="stylesheet" href="../styles/tcal.css">
+	<link rel="stylesheet" type="text/css" href="../styles/search.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header col-md-1">
+        <a class="navbar-brand" href="#">
+           <img src="../img/logo.png" alt="logo" class="img-tamano">
+        </a>
+      </div>
+      <div class="col-md-5">
+      </div>
+    </div>
+  </nav>
+	<!--search page-->
+	<div class="container-fluid">
+		<div class="col-md-7">
+			<div class="row">
+				<div class="col-md-2">
+					Fechas
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="tcal" >
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="tcal" id="tcalNextYear">
+				</div>
+				<div class="col-md-3">
+
+				</div>
+				<div class="col-md-1">
+					
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					Tipo de <br> habitación
+				</div>
+				<div class="col-md-3">
+					<div id="tipo-habitacion" class="tipo-hab">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<span class="texto">Casa entera</span>
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div id="tipo-habitacion" class="tipo-hab">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<span>Habitación privada</span>
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div id="tipo-habitacion" class="tipo-hab">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<span>Habitación<br> compartida</span>
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+					</div>
+				</div>
+				<div class="col-md-1">
+					
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<span class="glyphicon glyphicon-flash flash-color" aria-hidden="true"></span>
+					Reserva <br> inmediata
+				</div>
+				<div class="col-md-8">
+					Anuncios que no requieran que el anfitrion acepte la solicitud.
+				</div>
+				<div class="col-md-2">
+					<!-- Rounded switch -->
+					<label id="reserva " class="switch">
+					  	<input type="checkbox">
+					  	<div class="slider round"></div>
+					</label>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-2">
+					<button id="filtro" class="btn btn-default" type="submit">Filtros</button>
+				</div>
+			</div>
+			<div class="row">
+				<p>Pueden aplicarse tarifas e impuestos adicionales</p>
+			</div>
+			<div class="extra-filtro">
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Tamaño
+					</div>
+					<div class="col-md-3">
+						<select class="tamano">
+						  	<option value="volvo">Habitaciones  </option>
+						  	<option value="saab">1 Dormitorio</option>
+						  	<option value="mercedes">2 Dormitorios</option>
+						  	<option value="audi">3 Dormitorios</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<select class="tamano">
+						  	<option value="volvo">Baños</option>
+						  	<option value="saab">0 Baños</option>
+						  	<option value="mercedes">1 Baño</option>
+						  	<option value="audi">2 Baños</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<select class="tamano">
+						  	<option value="volvo">Camas</option>
+						  	<option value="saab">1 Cama</option>
+						  	<option value="mercedes">2 Camas</option>
+						  	<option value="audi">3 Camas</option>
+						</select>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Opciones
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Superhost
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Servicios
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Wifi
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				TV
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Cocina
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Servicios
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Edificio con ascensor
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Gimnasio
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Parking gratuito
+					</div>
+					<div class="col-md-1">
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Normas de la casa
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Admite mascotas
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Apto para eventos
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Apto para fumadores
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-2">
+						Idioma del anfitrión
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Español
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				English
+					</div>
+					<div class="col-md-3">
+						<label>
+	      					<input type="checkbox">
+	    				</label>
+	    				Français
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<button class="btn btn-block cancel-btn bye-extra-filtro ">Cancelar</button>
+				</div>
+				<div class="col-md-4">
+					<button id="habilitar-boton" class="btn btn-block btn-danger" disabled>Aplicar filtros</button>
+				</div>
+			</div>
+			</div>
+			<div class="row">
+			<h1>REGISTRO DE  ALOJAMIENTO</h1>
+				<form action="">
+					<div id="idLugar"></div>
+					<div class="form-group">
+					    <label for="busqueda">Codigo</label>
+					    <input type="text" class="form-control" id="busqueda" placeholder="Ingrese lugar">
+					</div>
+					 <button id="btn-reg-lugar" type="submit" class="btn btn-danger">Busqueda de alojamiento</button>
+				</form>
+			</div>
+			<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="row" id="resultadoBusqueda"></div>
+					<div class="row" id="resultado">
+					<!-- 	<div class="col-lg-4">
+							<img src="http://www.sierraverdeperu.net/portal/media/com_hikashop/upload/paracas-ballestas2.jpg" class="img-responsive" alt="">
+								<div class="row">
+									<div class="col-lg-7">
+										<h3>Distrito :<span id="distrito"></span></h3>
+										<h3>Departamento :<span id="departamento"></span></h3>
+									</div>
+									<div class="col-lg-5"+>
+										<h3>S/. <span id="precio" ></span></h3>
+									</div>
+							</div>
+						</div> -->
+					</div>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div id="map"></div>
+		</div>
+	</div>
+	<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyCkZsI4oLzrUCLnz5Fr1DxkzCMS4eLQ8Kc"
+  type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="gmaps.js"></script>
+	<script type="text/javascript" src="mapa.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script type="text/javascript" src="search.js"></script>
+	<script type="text/javascript" src="tcal.js"></script>	
+	<script type="text/javascript" src="app/busqueda-alojamiento.js"></script>
+
+</body>
+</html>
